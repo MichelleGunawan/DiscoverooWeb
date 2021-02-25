@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom';
-import styles from './styles.css' //contains css for header
 
 import HomeNav from '../NavBars/HomeNav';
 import 'font-awesome/css/font-awesome.css';
+import styles from './styles.css'; //contains css for header
 
 const SignUpContainer = styled.div`
    width:60%;
@@ -66,7 +66,7 @@ export default class Signup extends Component {
                                 <div class="card-body">
                                 
                                 <span class="bmd-form-group">
-                                 <div class="input-group">
+                                 <div class="input-group" style={{margin:'0px'}}>
                                     <div class="input-group-prepend">
                                        <span class="input-group-text">
                                           <i class="material-icons">face</i>
@@ -135,7 +135,7 @@ export default class Signup extends Component {
                                 </div>
                                 <div class="description text-center" style={{color:'#adadad'}}>Already have an account? <Link to="/Signin">Sign In!</Link></div>
                                 <div class="footer text-center">
-                                <a href="javascript:;" class="btn btn-primary btn-link btn-wd btn-lg">Sign In</a>
+                                <a href="javascript:;" class="btn btn-primary btn-link btn-wd btn-lg">Sign Up</a>
                                 </div>
                             </form>
                             </div>

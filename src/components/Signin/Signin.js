@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {Form, Button} from 'react-bootstrap';
 
+import HomeNav from '../NavBars/HomeNav';
+import 'font-awesome/css/font-awesome.css';
+import styles from './styles.css' //contains css for header
+
 const SignInContainer = styled.div`
    width:60%;
    margin:3em auto;
@@ -41,35 +45,73 @@ export default class signin extends Component {
     } = this.state;
 
     return (
-      <SignInContainer>
-         <h1> Sign In </h1>
-         <ErrorsDisplay error={error}/>
-         <Form onSubmit={this.handleSubmit}>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control id="email" 
-               name="email"
-               type="text"
-               placeholder="Email"
-               value={email}
-               onChange={this.change} />
-            </Form.Group>
+      <div>
+            <HomeNav/> 
+            <div class="section section-signup page-header  background">
+              <div class="container">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 mx-auto signinform">
+                         <div class="card card-login">
+                            <form class="form" onSubmit={this.handleSubmit}>
+                                <div class="card-header card-header-primary text-center">
+                                <h4 class="card-title">Sign In</h4>
+                                <div class="social-line">
+                                    <a href="javascript:;" class="btn btn-just-icon btn-link">
+                                    <i className="fa fa-facebook"></i>
+                                    {/* <i class="material-icons-outlined">facebook</i> */}
+                                    </a>
+                                    <a href="javascript:;" class="btn btn-just-icon btn-link">
+                                    <i class="fa fa-google"></i>
+                                    </a>
+                                </div>
+                                </div>
+                                <p class="description text-center" style={{marginBottom: '0px', color:'#adadad'}}>Or Be Classical</p>
+                                <div class="card-body">
+                                
+                                  <span class="bmd-form-group">
+                                    <div class="input-group" style={{marginTop: '5px'}}>
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">mail</i>
+                                    </span>
+                                    </div>
+                                    <input 
+                                    class="form-control" 
+                                    id="email" 
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email"
+                                    value={email}
+                                    onChange={this.change} autocomplete="off" style={{cursor: 'pointer'}}/>
+                                </div></span>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control id="password" 
-               name="password"
-               type="password"
-               placeholder="Password"
-               value={password}
-               onChange={this.change} />
-            </Form.Group>
-            <div>Don't have an account? <Link to="/signup">Sign Up!</Link></div>
-            <div>
-              <button button type="submit">Sign In</button>
-            </div>
-          </Form>
-      </SignInContainer>
+                                <span class="bmd-form-group"><div class="input-group" style={{marginTop: '10px'}}>
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                    </div>
+                                    <input 
+                                    class="form-control" 
+                                    id="password" 
+                                    name="password"
+                                    type="passwod"
+                                    placeholder="Password"
+                                    value={password}
+                                    onChange={this.change} autocomplete="off" style={{cursor: 'pointer'}}/>
+                                </div></span>
+                                </div>
+                                <div class="description text-center" style={{color:'#adadad'}}>Don't have an account? <Link to="/Signup">Sign Up!</Link></div>
+                                <div class="footer text-center">
+                                <a href="javascript:;" class="btn btn-primary btn-link btn-wd btn-lg">Sign In</a>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>  
+         </div>
     );
   }
 
