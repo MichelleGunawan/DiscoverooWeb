@@ -1,0 +1,155 @@
+.rectangle {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: #aac4b7f5;
+    position:absolute;
+    top:0%;
+}
+
+.signin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+.signinform{
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.background{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../Images/Artboard2resize.png');
+}
+
+.portion1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+.portionsignin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../Images/Artboard2resize.png');
+}
+  
+.form{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.landingimg{
+  width:100%;
+  resize: cover;
+  position: relative;
+  display: inline-block;
+}
+
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bmd-form-group .form-control, .bmd-form-group input::placeholder, .bmd-form-group label {
+  line-height: 1.1;
+}
+
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.form-control {
+  display:block;
+  background: no-repeat bottom,50% calc(100% - 1px);
+  background-size: 0 100%,100% 100%;
+  border: 0;
+  height: 36px;
+  transition: background 0s ease-out;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.form-control, .is-focused .form-control {
+  background-image: linear-gradient(
+0deg
+,#9c27b0 2px,rgba(156,39,176,0) 0),linear-gradient(
+0deg
+,#d2d2d2 1px,hsla(0,0%,82%,0) 0);
+}
+
+.input-group>.input-group-prepend>.input-group-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group .input-group-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+.card{
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 6px;
+  color: rgba(0,0,0,.87);
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%)
+}
+
+.card-login .card-header {
+  margin: -40px 20px 15px;
+  padding: 20px 0;
+}
+
+.card .card-header-primary {
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 20%), 0 13px 24px -11px rgb(39 162 176 / 60%);
+}
+
+.card.bg-primary, .card .card-header-primary, .card.card-rotate.bg-primary .back, .card.card-rotate.bg-primary .front {
+  background: linear-gradient(
+60deg
+,#afe3e1,#86b0ae);
+}
+
+.text-center {
+  text-align: center!important;
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #d0ebf3;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-radius: 8px;
+  border-color: #8ad7ee;
+  border-width: 2px;
+  color: #8ad7ee;
+  background-color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");

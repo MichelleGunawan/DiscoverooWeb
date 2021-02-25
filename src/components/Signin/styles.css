@@ -1,0 +1,119 @@
+.rectangle {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: #aac4b7f5;
+    position:absolute;
+    top:0%;
+}
+
+.signin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+.signinform{
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+
+.background{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../Images/Artboard2resize.png');
+}
+
+.portion1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+.portionsignin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../Images/Artboard2resize.png');
+}
+  
+.form{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.landingimg{
+  width:100%;
+  resize: cover;
+  position: relative;
+  display: inline-block;
+}
+
+.card{
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 6px;
+  color: rgba(0,0,0,.87);
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%)
+}
+
+.card-login .card-header {
+  margin: -40px 20px 15px;
+  padding: 20px 0;
+}
+
+.card .card-header-primary {
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 20%), 0 13px 24px -11px rgb(39 162 176 / 60%);
+}
+
+.card.bg-primary, .card .card-header-primary, .card.card-rotate.bg-primary .back, .card.card-rotate.bg-primary .front {
+  background: linear-gradient(
+60deg
+,#afe3e1,#86b0ae);
+}
+
+.text-center {
+  text-align: center!important;
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #d0ebf3;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-radius: 8px;
+  border-color: #8ad7ee;
+  border-width: 2px;
+  color: #8ad7ee;
+  background-color: transparent;
+}
+
+.card-login .input-group {
+    padding-bottom: 7px;
+    margin: 27px 0 0;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");

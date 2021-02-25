@@ -1,0 +1,50 @@
+.signin{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #8ad7ee;
+    border-width: 2px;
+    color: #8ad7ee;
+    background-color: transparent;
+  }
+
+  .prev{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #e0d9c8;
+    border-width: 2px;
+    color: #e0d9c8;
+  }
+
+  .home{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #e0d9c8;
+    border-width: 2px;
+    color: #e0d9c8;
+  }
+
+  .next{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #e0d9c8;
+    border-width: 2px;
+    color: #e0d9c8;
+  }
+
+  .quiz{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #e0d9c8;
+    border-width: 2px;
+    color: #e0d9c8;
+  }
