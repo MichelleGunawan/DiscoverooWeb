@@ -7,20 +7,13 @@
     top:0%;
 }
 
-.signin{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 6px;
-  padding-bottom: 5px;
-}
-
 .signinform{
-  margin-top: 10%;
-  margin-bottom: 20%;
+  margin-top: 8%;
+  margin-bottom: 11%;
 }
 
 .background{
+  height: 100vh; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,13 +26,6 @@
   align-items: center;
   padding-top: 6px;
   padding-bottom: 5px;
-}
-
-.portionsignin{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../../Images/Artboard2resize.png');
 }
   
 .form{
@@ -151,5 +137,17 @@
   color: #8ad7ee;
   background-color: transparent;
 }
+
+a {
+  color: #e29999;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #89b8c2;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 
 @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");

@@ -50,7 +50,7 @@ export default class signin extends Component {
             <div class="section section-signup page-header  background">
               <div class="container">
                   <div class="row">
-                     <div class="col-lg-4 col-md-6 mx-auto signinform">
+                     <div class="col-lg-4 col-md-6 mx-auto signinform" >
                          <div class="card card-login">
                             <form class="form" onSubmit={this.handleSubmit}>
                                 <div class="card-header card-header-primary text-center">

@@ -7,6 +7,11 @@
     border-width: 2px;
     color: #8ad7ee;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .prev{
@@ -48,3 +53,9 @@
     border-width: 2px;
     color: #e0d9c8;
   }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #ffcdc9;
+    border-color: #e49689;
+}
