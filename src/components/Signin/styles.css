@@ -36,12 +36,12 @@
   padding-bottom: 5px;
 }
 
-.portionsignin{
+/* .portionsignin{
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url('../../Images/Artboard2resize.png');
-}
+} */
   
 .form{
   margin-left: 10px;
@@ -92,7 +92,7 @@
   text-decoration: none;
 }
 
-.btn-primary {
+.btn-primary-signin {
   background-color: transparent;
   border-radius: 8px;
   border-color: #8ad7ee;
@@ -113,6 +113,8 @@
     align-items: stretch;
     width: 100%;
 }
+
+
 
 
 @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");

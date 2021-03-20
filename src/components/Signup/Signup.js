@@ -135,7 +135,7 @@ export default class Signup extends Component {
                                 </div>
                                 <div class="description text-center" style={{color:'#adadad'}}>Already have an account? <Link to="/Signin">Sign In!</Link></div>
                                 <div class="footer text-center">
-                                <a href="javascript:;" class="btn btn-primary btn-link btn-wd btn-lg">Sign Up</a>
+                                <a href="javascript:;" class="btn btn-primary-signup btn-link btn-wd btn-lg">Sign Up</a>
                                 </div>
                             </form>
                             </div>

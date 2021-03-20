@@ -13,6 +13,7 @@ import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup';
 import Discover from './components/Discover/Discover';
 import NotFound from './components/NotFound';
+import Profile from './components/Profile/Profile';
 
 //import Test from './components/Test/Test';
 
@@ -27,6 +28,7 @@ export default class App extends Component {
             <Route path = "/Signin" component={Signin} />
             <Route path = "/Signup" component={Signup} />
             <Route path = "/Discover" component={Discover} />
+            <Route path = "/Profile" component={Profile} />
             <Route component={NotFound} />
           </Switch>
       </Router>
