@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 
 import styles from './styles.css' //contains css for header
 import HomeNav from '../NavBars/HomeNav'
-
+import MessageButton from '../Buttons/MessageButton'
+import BookButton from '../Buttons/BookButton'
 
 import jane from '../../Images/jane.jpg';
 import jane2 from '../../Images/jane2.jpg';
@@ -11,6 +12,8 @@ import jane3 from '../../Images/jane3.jpg';
 import john from '../../Images/john.jpg';
 import john2 from '../../Images/john2.jpg';
 import john3 from '../../Images/john3.jpg';
+import logo from '../../Images/logo.png';
+import circle from '../../Images/circle.png'
 import { CalendarViewDayRounded } from '@material-ui/icons';
 
 
@@ -106,17 +109,13 @@ export default class Profile extends Component {
                             </div>
                             <div class="name">
                                 <h3 class="title">Christian Louboutin</h3>
-                                <h6>Designer</h6>
-                                <a href="#pablo" class="btn-profile btn-profile-just-icon btn-profile-link btn-profile-dribbble"><i class="fa fa-dribbble"></i></a>
-                                <a href="#pablo" class="btn-profile btn-profile-just-icon btn-profile-link btn-profile-twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn-profile btn-profile-just-icon btn-profile-link btn-profile-pinterest"><i class="fa fa-pinterest"></i></a>
+                                <h5>Designer</h5>
+                                <p>Rate: $20/hr</p>
                             </div>
                             </div>
                         </div>
                         </div>
-                        <div class="description text-center">
-                        <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
-                        </div>
+                        
                         <div class="row">
                         <div class="col-md-6 ml-auto mr-auto">
                             <div class="profile-tabs">
@@ -149,16 +148,15 @@ export default class Profile extends Component {
                         <div class="tab-content tab-space">
 
                         <div id="description" class="tab-pane active text-center gallery">
-                            <div class="row">
-                            <div class="col-md-3 ml-auto">
-                                <img src={jane} class="rounded"/>
-                                <img src={jane2} class="rounded"/>
-                            </div>
-                            <div class="col-md-3 mr-auto">
-                                <img src={john} class="rounded"/>
-                                <img src={john2} class="rounded"/>
-                            </div>
-                            </div>
+                            <div class="description text-center">
+                            <h5><b>About</b></h5>
+                            <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+                            <br></br>
+                            
+                            <MessageButton/> 
+                            
+                            <BookButton/>
+                            </div>                                               
                         </div>
 
                         <div id="calendar" class="tab-pane text-center gallery" >
@@ -179,11 +177,10 @@ export default class Profile extends Component {
                             <div class="col-md-3 ml-auto">
                                 <img src={jane} class="rounded"/>
                                 <img src={jane2} class="rounded"/>
-                                <img src={jane3} class="rounded"/>
                             </div>
                             <div class="col-md-3 mr-auto">
-                                <img src={jane} class="rounded"/>
-                                <img src={jane2} class="rounded"/>
+                                <img src={john} class="rounded"/>
+                                <img src={john2} class="rounded"/>
                             </div>
                             </div>
                         </div>
@@ -191,6 +188,38 @@ export default class Profile extends Component {
                     </div>
                     </div>
                 </div>
+
+                <footer class="footer footer-default">
+                <div class="container">
+                <nav class="float-left">
+                    <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com/">
+                        Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/presentation">
+                        About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/blog">
+                        Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/license">
+                        Licenses
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+                <div class="copyright float-right">
+                    ©2021, made with <i class="material-icons">favorite</i> by <a href=""><img className="footer-logo" src={circle}/></a>
+                </div>
+                </div>
+            </footer>
             </div>
         )
     }

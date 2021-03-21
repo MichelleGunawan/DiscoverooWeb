@@ -1,7 +1,6 @@
 .signin{
     margin-left: 10px;
     margin-right: 10px;
-    background-color: transparent;
     border-radius: 8px;
     border-color: #43B79D;
     border-width: 2px;
@@ -62,3 +61,24 @@
 }
 /* background-color: #ffcdc9;
     border-color: #e49689 */
+
+.det-btn{
+  color: #fff;
+  font-size: 25px;
+
+  width: 70vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #afe3e1;
+  
+  
+  background-color: #afe3e1;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 15px;
+}
