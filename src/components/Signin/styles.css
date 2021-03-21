@@ -95,9 +95,9 @@
 .btn-primary-signin {
   background-color: transparent;
   border-radius: 8px;
-  border-color: #8ad7ee;
+  border-color: #43B79D;
   border-width: 2px;
-  color: #8ad7ee;
+  color: #43B79D;
   background-color: transparent;
 }
 
@@ -112,6 +112,12 @@
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
+}
+
+.btn-primary-signin:hover {
+  color: #fff;
+  background-color: #FFC861;
+  border-color: #FFC861;
 }
 
 

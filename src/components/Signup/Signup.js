@@ -133,9 +133,9 @@ export default class Signup extends Component {
                                     onChange={this.change} autocomplete="off" style={{cursor: 'pointer'}}/>
                                 </div></span>
                                 </div>
-                                <div class="description text-center" style={{color:'#adadad'}}>Already have an account? <Link to="/Signin">Sign In!</Link></div>
+                                <div class="text-center" style={{color:'#adadad', maxWidth:'600px', marginBottom: "10px"}}>Already have an account? <Link to="/Signin">Sign In!</Link></div>
                                 <div class="footer text-center">
-                                <a href="javascript:;" class="btn btn-primary-signup btn-link btn-wd btn-lg">Sign Up</a>
+                                <a href="javascript:;" class="btn btn-primary-signup  btn-wd btn-lg">Sign Up</a>
                                 </div>
                             </form>
                             </div>

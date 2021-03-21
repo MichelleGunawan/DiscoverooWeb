@@ -102,7 +102,7 @@ export default class Profile extends Component {
                     <div class="profile-content">
                     <div class="container">
                         <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto">
+                        <div class="col-md-6 ml-auto-profile ml-auto-profile">
                             <div class="profile">
                             <div class="avatar">
                                 <img src={jane} alt="Circle Image" class="img-raised rounded-circle img-fluid"/>
@@ -117,7 +117,7 @@ export default class Profile extends Component {
                         </div>
                         
                         <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto">
+                        <div class="col-md-6 ml-auto-profile ml-auto-profile">
                             <div class="profile-tabs">
                             <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                                 
@@ -161,12 +161,12 @@ export default class Profile extends Component {
 
                         <div id="calendar" class="tab-pane text-center gallery" >
                             <div class="row">
-                            <div class="col-md-3 ml-auto">
+                            <div class="col-md-3 ml-auto-profile">
                                 <img src={jane} class="rounded"/>
                                 <img src={jane2} class="rounded"/>
                                 <img src={jane3} class="rounded"/>
                             </div>
-                            <div class="col-md-3 mr-auto">
+                            <div class="col-md-3 ml-auto-profile">
                                 <img src={jane} class="rounded"/>
                                 <img src={jane2} class="rounded"/>
                             </div>
@@ -174,11 +174,11 @@ export default class Profile extends Component {
                         </div>
                         <div id="reviews" class="tab-pane text-center gallery" >
                             <div class="row">
-                            <div class="col-md-3 ml-auto">
+                            <div class="col-md-3 ml-auto-profile">
                                 <img src={jane} class="rounded"/>
                                 <img src={jane2} class="rounded"/>
                             </div>
-                            <div class="col-md-3 mr-auto">
+                            <div class="col-md-3 ml-auto-profile">
                                 <img src={john} class="rounded"/>
                                 <img src={john2} class="rounded"/>
                             </div>

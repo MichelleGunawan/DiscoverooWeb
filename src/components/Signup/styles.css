@@ -132,14 +132,14 @@
 .btn-primary-signup {
   background-color: transparent;
   border-radius: 8px;
-  border-color: #8ad7ee;
+  border-color: #43B79D;
   border-width: 2px;
-  color: #8ad7ee;
+  color: #43B79D;
   background-color: transparent;
 }
 
 a {
-  color: #e29999;
+  color: #FFC861;
   text-decoration: none;
   background-color: transparent;
 }
@@ -153,6 +153,17 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
   background-color: transparent;
+}
+
+.btn-primary-signup:hover {
+  color: #fff;
+  background-color: #FFC861;
+  border-color: #FFC861;
+}
+
+.other{
+  max-width:600px;
+  margin-top: 20px
 }
 
 
