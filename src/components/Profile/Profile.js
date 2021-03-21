@@ -134,7 +134,7 @@ export default class Profile extends Component {
 
                                 <li class="nav-item">
                                 <a id = "calButton" class="nav-link" href="#works" role="tab" data-toggle="tab" onClick={this.calClick}>
-                                    <i class="material-icons">palette</i> Calender
+                                    <i class="material-icons">calendar_today</i> Availability
                                 </a>
                                 </li>
 
