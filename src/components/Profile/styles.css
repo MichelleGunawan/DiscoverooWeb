@@ -120,6 +120,7 @@ html * {
 .description {
     margin: 1.071rem auto 0;
     max-width: 600px;
+    color: #555
 }
 
 .card-description, .description, .footer-big p {
@@ -318,7 +319,7 @@ a .material-icons {
 
 .gallery img {
     width: 35vh;
-    margin-bottom: 2.142rem;
+    margin-bottom: 10px;
 }
 
 .rounded {
@@ -419,4 +420,29 @@ img{
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+/************************calendar******************/
+.calendar-profile{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+/***************************reviews***************************/
+.review{
+    padding-left: 20%; 
+    padding-right:20%; 
+    color:#555}
+
+.paragraph{
+    width: 20%!important;
+    height: undefined;
+    margin-bottom: 10px
 }

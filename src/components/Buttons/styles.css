@@ -2,9 +2,9 @@
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 8px;
-    border-color: #43B79D;
+    border-color: #a3d4d3;
     border-width: 2px;
-    color: #43B79D;
+    color: #a3d4d3;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  /* #8ad7ee */
+  /* #8ad7ee #43B79D*/
 
   .prev{
     margin-left: 10px;

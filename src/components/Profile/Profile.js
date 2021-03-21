@@ -6,6 +6,10 @@ import HomeNav from '../NavBars/HomeNav'
 import MessageButton from '../Buttons/MessageButton'
 import BookButton from '../Buttons/BookButton'
 
+import Calendar from './Calendar';
+
+import Five from '../../Images/5star.png';
+
 import jane from '../../Images/jane.jpg';
 import jane2 from '../../Images/jane2.jpg';
 import jane3 from '../../Images/jane3.jpg';
@@ -14,7 +18,7 @@ import john2 from '../../Images/john2.jpg';
 import john3 from '../../Images/john3.jpg';
 import logo from '../../Images/logo.png';
 import circle from '../../Images/circle.png'
-import { CalendarViewDayRounded } from '@material-ui/icons';
+
 
 
 export default class Profile extends Component {
@@ -160,6 +164,11 @@ export default class Profile extends Component {
                         </div>
 
                         <div id="calendar" class="tab-pane text-center gallery" >
+                            <div class="outer">
+                                <Calendar class="calendar-profile"/>
+                            </div>
+                            <br></br>
+
                             <div class="row">
                             <div class="col-md-3 ml-auto-profile">
                                 <img src={jane} class="rounded"/>
@@ -171,17 +180,15 @@ export default class Profile extends Component {
                             </div>
                             </div>
                         </div>
+
                         <div id="reviews" class="tab-pane text-center gallery" >
-                            <div class="row">
-                            <div class="col-md-3 ml-auto-profile">
-                                <img src={jane} class="rounded"/>
-                                <img src={jane2} class="rounded"/>
+                            <hr/>
+                            <div class="review">
+                                <div><img src={Five} class="paragraph"/><b>REVIEW</b></div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
-                            <div class="col-md-3 mr-auto-profile">
-                                <img src={john} class="rounded"/>
-                                <img src={john2} class="rounded"/>
-                            </div>
-                            </div>
+                            <hr/>
+                            <br/>
                         </div>
                         </div>
                     </div>
