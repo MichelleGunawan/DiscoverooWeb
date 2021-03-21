@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import styles from './styles.css' //contains css for header
 import HomeNav from '../NavBars/HomeNav'
 
-import background from '../../Images/Artboard1.png';
+
 import jane from '../../Images/jane.jpg';
 import jane2 from '../../Images/jane2.jpg';
 import jane3 from '../../Images/jane3.jpg';
@@ -32,32 +32,58 @@ export default class Profile extends Component {
         document.querySelector('body').removeAttribute('class')
     }
 
-    handleSubmitDes=()=>
+    desClick=()=>
     {
-        this.setState({
-            des: "nav-link active",
-            cal: "nav-link",
-            rev: "nav-link"
-        });
-        console.out("des");
+        console.log('here')
+        
+        var des = document.getElementById('description');
+        var desbutton = document.getElementById('desButton');  
+        var cal = document.getElementById('calendar');
+        var calbutton = document.getElementById('calButton');
+        var rev = document.getElementById('reviews');
+        var revbutton = document.getElementById('revButton');
+
+        des.className="tab-pane active text-center gallery"
+        desbutton.className='nav-link active'
+        cal.className="tab-pane text-center gallery"
+        calbutton.className='nav-link'
+        rev.className="tab-pane text-center gallery"
+        revbutton.className='nav-link'
     }
-    handleSubmitCal=()=>
+    calClick=()=>
     {
-        this.setState({
-            des: "nav-link",
-            cal: "nav-link active",
-            rev: "nav-link"
-        });
-        console.out("cal");
+        console.log("cal");
+        var des = document.getElementById('description');
+        var desbutton = document.getElementById('desButton');
+        var cal = document.getElementById('calendar');
+        var calbutton = document.getElementById('calButton');
+        var rev = document.getElementById('reviews');
+        var revbutton = document.getElementById('revButton');
+
+        des.className="tab-pane text-center gallery"
+        desbutton.className='nav-link'
+        cal.className="tab-pane active text-center gallery"
+        calbutton.className='nav-link active'
+        rev.className="tab-pane text-center gallery"
+        revbutton.className='nav-link'
     }
-    handleSubmitRev=()=>
+    
+    revClick=()=>
     {
-        this.setState({
-            des: "nav-lin",
-            cal: "nav-link",
-            rev: "nav-linkk active"
-        });
-        console.out("rev");
+        console.log("rev");
+        var des = document.getElementById('description');
+        var desbutton = document.getElementById('desButton');
+        var cal = document.getElementById('calendar');
+        var calbutton = document.getElementById('calButton');
+        var rev = document.getElementById('reviews');
+        var revbutton = document.getElementById('revButton');
+
+        des.className="tab-pane text-center gallery"
+        desbutton.className='nav-link'
+        cal.className="tab-pane text-center gallery"
+        calbutton.className='nav-link'
+        rev.className="tab-pane active text-center gallery"
+        revbutton.className='nav-link active'
     }
 
 
@@ -95,27 +121,34 @@ export default class Profile extends Component {
                         <div class="col-md-6 ml-auto mr-auto">
                             <div class="profile-tabs">
                             <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                                
                                 <li class="nav-item">
-                                <a class={this.state.des} href="#studio" role="tab" data-toggle="tab" onClick={this.handleClickDes}>
-                                    <i class="material-icons">camera</i> Studio
+                                <a id = "desButton" class="nav-link active" href="#studio" role="tab" data-toggle="tab" onClick={this.desClick}>
+                                    <i class="material-icons">person</i> Description
                                 </a>
                                 </li>
+
+
                                 <li class="nav-item">
-                                <a class={this.state.cal} href="#works" role="tab" data-toggle="tab" onClick={this.handleClickCal}>
-                                    <i class="material-icons">palette</i> Work
+                                <a id = "calButton" class="nav-link" href="#works" role="tab" data-toggle="tab" onClick={this.calClick}>
+                                    <i class="material-icons">palette</i> Calender
                                 </a>
                                 </li>
+
+
                                 <li class="nav-item">
-                                <a class={this.state.rev} href="#favorite" role="tab" data-toggle="tab" onClick={this.handleClickRev}>
-                                    <i class="material-icons">favorite</i> Favorite
+                                <a id="revButton" class={this.state.rev} href="#favorite" role="tab" data-toggle="tab" onClick={this.revClick}>
+                                    <i class="material-icons">star_rate</i> Reviews
                                 </a>
                                 </li>
+
                             </ul>
                             </div>
                         </div>
                         </div>
                         <div class="tab-content tab-space">
-                        <div class="tab-pane active text-center gallery" id="studio">
+
+                        <div id="description" class="tab-pane active text-center gallery">
                             <div class="row">
                             <div class="col-md-3 ml-auto">
                                 <img src={jane} class="rounded"/>
@@ -127,7 +160,8 @@ export default class Profile extends Component {
                             </div>
                             </div>
                         </div>
-                        <div class="tab-pane text-center gallery" id="works">
+
+                        <div id="calendar" class="tab-pane text-center gallery" >
                             <div class="row">
                             <div class="col-md-3 ml-auto">
                                 <img src={jane} class="rounded"/>
@@ -140,16 +174,16 @@ export default class Profile extends Component {
                             </div>
                             </div>
                         </div>
-                        <div class="tab-pane text-center gallery" id="favorite">
+                        <div id="reviews" class="tab-pane text-center gallery" >
                             <div class="row">
                             <div class="col-md-3 ml-auto">
-                                <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded"/>
-                                <img src="../assets/img/examples/studio-3.jpg" class="rounded"/>
+                                <img src={jane} class="rounded"/>
+                                <img src={jane2} class="rounded"/>
+                                <img src={jane3} class="rounded"/>
                             </div>
                             <div class="col-md-3 mr-auto">
-                                <img src="../assets/img/examples/clem-onojeghuo.jpg" class="rounded"/>
-                                <img src="../assets/img/examples/olu-eletu.jpg" class="rounded"/>
-                                <img src="../assets/img/examples/studio-1.jpg" class="rounded"/>
+                                <img src={jane} class="rounded"/>
+                                <img src={jane2} class="rounded"/>
                             </div>
                             </div>
                         </div>
