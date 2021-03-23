@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import FilterForm from './FilterForm'
+import SortForm from './SortForm'
+
 import HomeNav from '../NavBars/HomeNav';
 import jane from '../../Images/jane.jpg';
 import jane2 from '../../Images/jane2.jpg';
@@ -8,14 +11,31 @@ import john from '../../Images/john.jpg';
 import john2 from '../../Images/john2.jpg';
 import john3 from '../../Images/john3.jpg';
 
+import filterup from '../../Images/filterup.png'
+import filterdown from '../../Images/filterdown.png'
+import sortdown from '../../Images/sortdown.png'
+import sortup from '../../Images/sortup.png'
+
+import TextField from '@material-ui/core/TextField';
+
 import styles from './styles.css' //contains css for header
 
-
-
 export default class Discover extends Component {
-    state = {
-        search : '',
-     }
+    constructor(props) {
+        super(props);
+        this.state = {                        
+            filterShow:false, 
+            filterimage:filterdown,
+            sortShow:false,
+            sortimage:sortdown, 
+            search: '',
+            value: 'testval'
+        };
+    }
+
+    handleChange = event => {
+        this.setState({ value: event.target.value });
+      };
 
     componentDidMount() {
         document.querySelector('body').setAttribute('class', "landing")
@@ -24,44 +44,70 @@ export default class Discover extends Component {
     componentWillUnmount() {
         document.querySelector('body').removeAttribute('class')
     }
+
+    handlefilterClick=()=>{
+        if(this.state.filterimage === filterup)
+            this.setState({filterimage:filterdown, filterShow:false})
+        else
+            this.setState({filterimage:filterup, filterShow: true})
+     }
+
+     handlesortClick=()=>{
+        if(this.state.sortimage === sortup)
+            this.setState({sortimage:sortdown, sortShow:false})
+        else
+            this.setState({sortimage:sortup, sortShow:true})
+     }
+
+
     render() {
 
      const 
-     {search} = this.state;
+     {search, classes} = this.state;
      
         return (
             <div>
                 <HomeNav/> 
                 <div class="searchsection">
                    <div class="input-group" style={{width: '40%'}}>
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                <i class="material-icons">search</i>
-                        </span>
-                        </div>
-                        <input 
-                        class="form-control" 
-                        id="search" 
-                        name="search"
-                        type="search"
+                        <i class="material-icons" style={{float:'left'}}>search</i>
+                        <TextField
+                        id="standard-full-width"
+                        style={{width:'90%', float:'left'}}
                         placeholder="Search"
-                        value={search}
-                        onChange={this.change} autocomplete="off" style={{cursor: 'pointer'}}/>
+                        fullWidth
+                        margin="normal"
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                        />
                     </div> 
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Filter
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                        <img src={this.state.filterimage} style={{width:"7.5vh"}} onClick={this.handlefilterClick}/>
+                        </div>
+
+                        <div class="col-sm-5">
+                        <img src={this.state.sortimage} style={{width:"7.5vh"}} onClick={this.handlesortClick}/>
+                        
                         </div>
                     </div>
                 </div>
                 
 
-                <div class="card-group" className="center" style={{marginLeft: '20%', marginTop: '5%'}}>
+                <div>
+                    {this.state.sortShow && <SortForm/>}
+                </div>  
+
+
+                <div>
+                    {this.state.filterShow && <FilterForm/>}
+                </div>
+                
+
+                <div class="card-group" className="center" style={{marginLeft: '20%', marginTop: '3%'}}>
                 <div class="row">
                     <div class="col-sm-3">
                     <div class="card">

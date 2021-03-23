@@ -15,7 +15,6 @@ import Discover from './components/Discover/Discover';
 import NotFound from './components/NotFound';
 import Profile from './components/Profile/Profile';
 
-//import Test from './components/Test/Test';
 
 export default class App extends Component {
 

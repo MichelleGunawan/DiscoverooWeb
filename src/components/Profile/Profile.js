@@ -25,9 +25,6 @@ export default class Profile extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            des: "nav-link active",
-            cal: "nav-link",
-            rev: "nav-link"
         };
     }
 
@@ -126,21 +123,21 @@ export default class Profile extends Component {
                             <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                                 
                                 <li class="nav-item">
-                                <a id = "desButton" class="nav-link active" href="#studio" role="tab" data-toggle="tab" onClick={this.desClick}>
-                                    <i class="material-icons">person</i> Description
+                                <a id = "desButton" class="nav-link active" href="#about" role="tab" data-toggle="tab" onClick={this.desClick}>
+                                    <i class="material-icons">person</i> About
                                 </a>
                                 </li>
 
 
                                 <li class="nav-item">
-                                <a id = "calButton" class="nav-link" href="#works" role="tab" data-toggle="tab" onClick={this.calClick}>
+                                <a id = "calButton" class="nav-link" href="#availability" role="tab" data-toggle="tab" onClick={this.calClick}>
                                     <i class="material-icons">calendar_today</i> Availability
                                 </a>
                                 </li>
 
 
                                 <li class="nav-item">
-                                <a id="revButton" class={this.state.rev} href="#favorite" role="tab" data-toggle="tab" onClick={this.revClick}>
+                                <a id = "revButton" class="nav-link" href="#reviews" role="tab" data-toggle="tab" onClick={this.revClick}>
                                     <i class="material-icons">star_rate</i> Reviews
                                 </a>
                                 </li>
@@ -153,7 +150,7 @@ export default class Profile extends Component {
 
                         <div id="description" class="tab-pane active text-center gallery">
                             <div class="description text-center">
-                            <h5><b>About</b></h5>
+                            {/* <h5><b>About</b></h5> */}
                             <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
                             <br></br>
                             
@@ -168,6 +165,12 @@ export default class Profile extends Component {
                                 <Calendar class="calendar-profile"/>
                             </div>
                             <br></br>
+
+                            <MessageButton/> 
+
+                            <br></br>
+                            
+                            <BookButton/>
 
                             <div class="row">
                             <div class="col-md-3 ml-auto-profile">
