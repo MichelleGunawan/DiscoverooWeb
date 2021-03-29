@@ -34,3 +34,35 @@
   position: relative;
   display: inline-block;
 }
+
+.home-background{  
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../Images/Home/Home1.jpg");
+}
+
+.home-raised {
+  background-color: #fff;
+  position: relative;
+  padding: 5% 8%;
+
+  margin: -20px 2px 0;
+  border-radius: 6px;
+  box-shadow: 0px -4px 4px rgb(0 0 0 / 14%);
+}
+
+.home-background h3{
+  color: rgb(110, 110, 110)
+}
+.home-background p{
+  color: rgb(143, 142, 142)
+}
+
+.absolute-center {
+  display: flex; /*make us of Flexbox*/
+  align-items: center; /*does vertically center the desired content*/
+  justify-content: center; /*horizontally centers single line items*/
+  text-align: center; /*optional, but helps horizontally center text that breaks into multiple lines*/
+}  

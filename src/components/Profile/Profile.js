@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 
 import styles from './styles.css' //contains css for header
 import HomeNav from '../NavBars/HomeNav'
-import MessageButton from '../Buttons/MessageButton'
-import BookButton from '../Buttons/BookButton'
+import SignedInNav from '../NavBars/SignedinNav'
+import MessageButton from '../Buttons/MessageButton';
+import BookButton from '../Buttons/BookButton';
+import BookButton1 from '../Buttons/BookButton1';
+import BookForm from './BookForm';
 
 import Calendar from './Calendar';
 
@@ -90,6 +93,8 @@ export default class Profile extends Component {
         revbutton.className='nav-link active'
     }
 
+    
+
 
     render() {
         const 
@@ -97,7 +102,7 @@ export default class Profile extends Component {
 
         return (
             <div>
-                <HomeNav/> 
+                <SignedInNav/> 
                 <div class="page-header header-filter profile-background" data-parallax="true"></div>
                 <div class="main main-raised">
                     <div class="profile-content">
@@ -109,7 +114,7 @@ export default class Profile extends Component {
                                 <img src={jane} alt="Circle Image" class="img-raised rounded-circle img-fluid"/>
                             </div>
                             <div class="name">
-                                <h3 class="title">Christian Louboutin</h3>
+                                <h3>Christian Louboutin</h3>
                                 <h5>Designer</h5>
                                 <p>Rate: $20/hr</p>
                             </div>
@@ -156,7 +161,7 @@ export default class Profile extends Component {
                             
                             <MessageButton/> 
                             
-                            <BookButton/>
+                            <div onClick={this.calClick}><BookButton/></div>
                             </div>                                               
                         </div>
 
@@ -164,24 +169,12 @@ export default class Profile extends Component {
                             <div class="outer">
                                 <Calendar class="calendar-profile"/>
                             </div>
-                            <br></br>
 
+                            <br></br>
                             <MessageButton/> 
 
-                            <br></br>
-                            
+                            <br></br>                            
                             <BookButton/>
-
-                            <div class="row">
-                            <div class="col-md-3 ml-auto-profile">
-                                <img src={jane} class="rounded"/>
-                                <img src={jane2} class="rounded"/>
-                            </div>
-                            <div class="col-md-3 mr-auto-profile">
-                                <img src={john} class="rounded"/>
-                                <img src={john2} class="rounded"/>
-                            </div>
-                            </div>
                         </div>
 
                         <div id="reviews" class="tab-pane text-center gallery" >
@@ -201,7 +194,7 @@ export default class Profile extends Component {
                 <footer class="footer footer-default">
                 <div class="container">
                 <nav class="float-left">
-                    <ul>
+                    {/* <ul>
                     <li>
                         <a href="https://www.creative-tim.com/">
                         Creative Tim
@@ -222,7 +215,7 @@ export default class Profile extends Component {
                         Licenses
                         </a>
                     </li>
-                    </ul>
+                    </ul> */}
                 </nav>
                 <div class="copyright float-right">
                     ©2021, made with <i class="material-icons">favorite</i> by <a href=""><img className="footer-logo" src={circle}/></a>

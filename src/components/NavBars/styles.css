@@ -1,3 +1,14 @@
 .navlogo{
     height: 50px;
 }
+.signedinnav-items{
+    float:right
+}
+
+.drawer-conents{
+    display: table;
+    margin: 0 auto;
+     color:#999;
+     padding: 10px;
+     justify-content: center;
+}

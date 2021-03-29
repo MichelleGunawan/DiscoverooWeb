@@ -2,20 +2,20 @@ import { useHistory } from "react-router"
 import Button from 'react-bootstrap/Button'
 import styles from './styles.css';
 
-function SigninButton(props) {
+function LogoutButton(props) {
   let history = useHistory()
 
-  var route = "Signin"
+  var route = "/"
 
   function handleClick() {
     history.push(route)
   }
 
   return (
-    <Button className="signin" onClick={handleClick}>
-      Sign In
+    <Button className="logout" onClick={handleClick}>
+      Logout
     </Button>
   )
 }
 
-export default SigninButton;
+export default LogoutButton;

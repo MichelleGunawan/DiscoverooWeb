@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-import FilterForm from './FilterForm'
-import SortForm from './SortForm'
-
 import HomeNav from '../NavBars/HomeNav';
+import SignedinNav from '../NavBars/SignedinNav';
+import FilterForm from './FilterForm';
+import SortForm from './SortForm';
+import PostingCard from './PostingCard';
+
 import jane from '../../Images/jane.jpg';
 import jane2 from '../../Images/jane2.jpg';
 import jane3 from '../../Images/jane3.jpg';
@@ -67,13 +69,13 @@ export default class Discover extends Component {
      
         return (
             <div>
-                <HomeNav/> 
+                <SignedinNav/> 
                 <div class="searchsection">
                    <div class="input-group" style={{width: '40%'}}>
                         <i class="material-icons" style={{float:'left'}}>search</i>
                         <TextField
                         id="standard-full-width"
-                        style={{width:'90%', float:'left'}}
+                        style={{width:'90%', float:'left', marginTop:'0px'}}
                         placeholder="Search"
                         fullWidth
                         margin="normal"
@@ -95,21 +97,20 @@ export default class Discover extends Component {
                         </div>
                     </div>
                 </div>
-                
-
-                <div>
-                    {this.state.sortShow && <SortForm/>}
-                </div>  
-
 
                 <div>
                     {this.state.filterShow && <FilterForm/>}
+                </div>
+
+                <div>
+                    {this.state.sortShow && <SortForm/>}
                 </div>
                 
 
                 <div class="card-group" className="center" style={{marginLeft: '20%', marginTop: '3%'}}>
                 <div class="row">
                     <div class="col-sm-3">
+                    <PostingCard postingname="Jane" postingjob="Tutor" postingday="M, W, F, On-Call" postingdist="5mi"/>
                     <div class="card">
                         <div class="card-body" style={{paddingLeft: '15%', paddingRight: '15%', paddingTop: '10%'}}>
                         {/* <img src={jane} class="card-img-top" alt="profile" style={{borderRadius: '100%'}}/> */}

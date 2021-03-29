@@ -2,7 +2,7 @@ import { useHistory } from "react-router"
 import Button from 'react-bootstrap/Button'
 import styles from './styles.css';
 
-function SigninButton(props) {
+function StartButton(props) {
   let history = useHistory()
 
   var route = "Signin"
@@ -12,10 +12,10 @@ function SigninButton(props) {
   }
 
   return (
-    <Button className="signin" onClick={handleClick}>
-      Sign In
+    <Button className="start" onClick={handleClick}>
+      Start Now!
     </Button>
   )
 }
 
-export default SigninButton;
+export default StartButton;

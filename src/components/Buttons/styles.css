@@ -62,6 +62,7 @@
 /* background-color: #ffcdc9;
     border-color: #e49689 */
 
+
 .det-btn{
   color: #fff;
   font-size: 25px;
@@ -81,4 +82,36 @@
   align-items: center;
   
   margin-bottom: 15px;
+}
+
+.start{
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 8px;
+  border-color: #a3d4d3;
+  border-width: 2px;
+  color: #a3d4d3;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+}
+
+.logout{
+  margin:0 auto;
+  margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border-color: #a3d4d3;
+    border-width: 2px;
+    color: #a3d4d3;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

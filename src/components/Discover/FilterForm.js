@@ -245,6 +245,16 @@ class FilterForm extends Component {
                         </select>
                         </div>
                     </div>
+
+                    <div className="form-group">
+                        <div className="col-9 col-sm-12">
+                        <select className="form-select" id="distance" style={{borderRadius:"5px", borderWidth:"0px", color:"#555"}}>
+                            <option value="yes">On-call</option>
+                            <option value="no">No On-call</option>
+                            <option value="only">Only On-call</option>
+                        </select>
+                        </div>
+                    </div>
                     </div>                 
                 </div>
             </form>     

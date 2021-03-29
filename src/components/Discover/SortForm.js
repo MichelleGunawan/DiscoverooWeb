@@ -51,7 +51,7 @@ class SortForm extends Component {
             </RadioGroup>
             </FormControl>
         </form>
-        <hr style={{width:"50%"}}/>
+        <hr style={{width:"55%"}}/>
         </div> 
         )
     }
